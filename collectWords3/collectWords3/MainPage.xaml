@@ -5,10 +5,26 @@
              x:Class="collectWords3.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Collect words"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+        <Entry Placeholder="Word"
+               HorizontalOptions="FillAndExpand"
+               Keyboard="Default"
+               VerticalOptions="Center"
+               x:Name="WordTextInput" />
+        <Button
+            Text="Add"
+            x:Name="ButtonAdd" />
+        <Button
+            Text="Clear"
+            x:Name="ButtonClear" />
+        <Button
+            Text="Show"
+            x:Name="ButtonShow" />
+        <Label
+            x:Name="MessageLabel" 
+            Text="message"/>
     </StackLayout>
 
 </ContentPage>
